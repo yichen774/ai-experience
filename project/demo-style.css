@@ -122,6 +122,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color:var(--gpColor-Yellow)
 }
 img:not(.nav-logo) {
   width: 100%;
@@ -218,7 +219,7 @@ p {
 .underline {
   width: 5rem;
   height: 0.25rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem;  
   background: var(--clr-primary-5);
   margin-left: auto;
   margin-right: auto;
@@ -241,9 +242,8 @@ NavBar
   display: flex;
   align-items: center;
   height: 8rem;
-  background-color: var(--clr-grey-10);
-  border-bottom: 1px var(--clr-grey-3);
-  background-color:var(--clr-primary-3);
+  border-bottom: 1px var(--gpBackground-DarkMedium);
+  background-color: var(--gpStoreDarkerGrey);
   box-shadow: 0 0 50px 0 rgb(0 0 0 / 75%);
   border-bottom-style: dashed;
 }
@@ -254,16 +254,18 @@ NavBar
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  
+  color: var(--clr-primary-2);
+  cursor: pointer;
 }
 
 .nav-header h3
 {
   padding-top: 00.75rem;
   padding-left: 2rem;
-  background-color:var(--clr-grey-6);
+  background-color:var(--clr-grey-4);
   border-radius: 1rem;
   box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+  color: var(--clr-primary-5);
 }
 
 .nav-links
@@ -274,9 +276,10 @@ NavBar
   gap: 1.5rem;
 }
 
-.nav-links li:hover
+.nav-links li:hover,.nav-links li.active
 {
-  background-color: grey;
+  background-color: var(--gpColor-Blue);
+  color: var(--gpColor-LightBlue);
 }
 
 

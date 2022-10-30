@@ -1,5 +1,4 @@
-class Calculator
-{
+class Calculator{
     constructor(previousOperandTextElement,currentOperandTextElement){
         this.previousOperandTextElement = previousOperandTextElement
         this.currentOperandTextElement = currentOperandTextElement
@@ -13,15 +12,14 @@ class Calculator
     delete(){
         this.currentOperand=this.currentOperand.toString().slice(0,-1)
     }
-    appendNumber(number)
-    {
+    appendNumber(number){
         if(number ==='.' && this.currentOperand.includes('.'))return
         this.currentOperand = this.currentOperand.toString() + number.toString()
     }
     chooseOperation(operation)
     {   
-        if(this.currentOperand === '')return
-        if(this.previousOperand !== ''){
+        if(this.currentOperand ==='')return
+        if(this.previousOperand !==''){
          this.compute()
         }
         this.operation = operation
@@ -31,7 +29,7 @@ class Calculator
     compute(){
         let computation
         const prev = parseFloat(this.previousOperand)
-        const current = parsefloat(this.currentOperand)
+        const current = parseFloat(this.currentOperand)
         if(isNaN(prev) || isNaN(current)) return
         switch(this.operation){
             case '+':
@@ -58,6 +56,9 @@ class Calculator
         this.currentOperandTextElement.innerText=this.currentOperand
         if(this.operation !=null){
             this.previousOperandTextElement.innerText=`${this.previousOperand} ${this.operation}`
+        }else
+        {
+            this.previousOperandTextElement.innerText=''
         }
     }
 }
