@@ -4,6 +4,7 @@ Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 /*
 =============== 
@@ -122,7 +123,8 @@ ul {
 }
 a {
   text-decoration: none;
-  color:var(--gpColor-Yellow)
+  color:var(--gpColor-Yellow);
+  font-family: 'Raleway', sans-serif;
 }
 img:not(.nav-logo) {
   width: 100%;
@@ -266,6 +268,7 @@ NavBar
   border-radius: 1rem;
   box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
   color: var(--clr-primary-5);
+  font-family: 'Raleway', sans-serif;
 }
 
 .nav-links
@@ -278,7 +281,10 @@ NavBar
 
 .nav-links li:hover,.nav-links li.active
 {
-  background-color: var(--gpColor-Blue);
+  background-color: var(--gpColor-DustyBlue);
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2rem;
   color: var(--gpColor-LightBlue);
 }
 
@@ -287,6 +293,4 @@ NavBar
 {
   width: 100vw;
   height: calc(100vh - 8rem);
-  
-
 }
