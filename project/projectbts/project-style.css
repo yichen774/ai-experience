@@ -264,6 +264,9 @@ NavBar
 {
   padding-top: 00.75rem;
   padding-left: 2rem;
+  padding-right: 6px;
+  border: 1px dashed var(--gpColor-DustyBlue);
+  text-shadow: 1px 1px var(--gpStoreLightestGrey);
   background-color:var(--clr-grey-4);
   border-radius: 1rem;
   box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
@@ -289,8 +292,51 @@ NavBar
 }
 
 
-.show-classdemo
+/* .show-classdemo
 {
   width: 100vw;
   height: calc(100vh - 8rem);
+} */
+
+/*
+===================
+resume
+===================
+*/
+*
+{
+  padding: 0;
+  margin:  0;
+  box-sizing: border-box;
+}
+
+
+.resume-profile
+{
+  display: block;
+  width: 100vw;
+  height: 30rem;
+  background-image: url(/images/sad\ dog.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.resume-me
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  height: 15rem;
+  width: 15rem;
+}
+
+#resume-name
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+
 }

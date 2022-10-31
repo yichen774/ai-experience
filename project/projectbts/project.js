@@ -1,4 +1,3 @@
-
 const navbar = document.querySelector('#nav');
 const navLinks1 = document.getElementById("nav-links-1");
 const navLinks2 = document.getElementById("nav-links-2");
@@ -25,6 +24,7 @@ function showpage(index)
     {
         case 0:
             p.innerHTML = `<iframe src ="./resume.html" width="100%" height="100%" />`
+            
             break;
         
         case 1:
@@ -38,7 +38,7 @@ function showpage(index)
             break;
 
         case 3:
-            p.innerHTML = `<iframe src="/w05/w05.html" width="100%" height="100%" />`
+            p.innerHTML = `<iframe src="/blogs/blog_411770083.html" width="100%" height="100%" />`
             // navLinks3.style.backgroundColor = "red" ;
             break;
          
