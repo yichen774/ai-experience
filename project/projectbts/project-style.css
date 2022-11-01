@@ -113,7 +113,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  background: linear-gradient(var(--gpStoreDarkerGrey),var(--clr-white));
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -291,12 +291,22 @@ NavBar
   color: var(--gpColor-LightBlue);
 }
 
+.navbar-fixed 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--gpStoreDarkerGrey);
+  z-index: 2;
+  box-shadow: var(--light-shadow);
+}
 
-/* .show-classdemo
+ .show-classdemo
 {
   width: 100vw;
-  height: calc(100vh - 8rem);
-} */
+  height:80rem
+}
 
 /*
 ===================
@@ -311,32 +321,265 @@ resume
 }
 
 
+
 .resume-profile
 {
-  display: block;
+  display: inline-block;
   width: 100vw;
   height: 30rem;
-  background-image: url(/images/sad\ dog.jpg);
+  background-image: url(/images/backgroundgif2.gif);
   background-size: cover;
   background-position: center;
 }
 .resume-me
 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  display: inline-block;
-  height: 15rem;
-  width: 15rem;
+  top: 30%;
+  left: 44.1%;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  z-index: 9999;
+  transition: all .3s ease-out;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
 }
 
+.resume-me:hover {
+  transform: scale(1.06, 1.06);
+}
 #resume-name
 {
+  font-family: var(--ff-secondary);
   position: absolute;
-  top: 50%;
+  top: 55.5%;
   left: 50%;
   transform: translate(-50%,-50%);
   display: inline-block;
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--clr-primary-4);
+}
+#resume-contain{
+  font-family: var(--ff-primary);
+  position: absolute;
+  top: 60.5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  color: var(--clr-primary-7);
+}
 
+.btn-container
+{
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  height: 60px;
+  width: 20rem;
+  margin: 0 auto ;
+}
+
+.resume-btn
+{
+  background-color: #B3DFFF;
+  border-radius: 20%;
+}
+
+.resume-btn:hover
+{
+  background-color: whitesmoke;
+}
+#github-logo-img
+{
+  padding: 15px;
+}
+
+.about-blog
+{
+  background-color: var(--clr-white);
+  box-shadow: 0 0 50px 0 rgb(0 0 0 / 50%);
+  border: #000F18 1px ;
+  border-radius: 2px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 4rem;
+}
+
+.about-content
+{
+  padding-left: 1rem;
+  font-size: larger;
+}
+
+.about-header
+{
+  padding-top: 1rem;
+  text-shadow: 1px 2px var(--gpStoreGrey);
+}
+
+.about-blog
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+#bs-info
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ex-header
+{
+  padding-top: 15rem;
+  text-align: center;
+  padding-bottom: 8rem;
+}
+
+.work-exp-1
+{
+  display: flex;
+  margin-left: 5rem;
+  border-radius: 2;
+  background-color: var(--clr-white);
+}
+
+.ex-blog-right
+{
+  background: var(--gpStoreLightGrey);
+  padding: 2rem;
+  text-align: center;
+}
+
+#ex-blog-right-1
+{
+  padding-right: 4rem;
+}
+
+.ex-blog-left
+{
+  padding: 1rem;
+}
+
+.work-exp-2
+{
+  display: flex;
+  margin-left: 5rem;
+  border-radius: 2;
+  background-color: var(--clr-white);
+  margin-top: 2rem;
+}
+
+.work-exp-2:hover
+{
+  box-shadow: 0 0 50px 0 rgb(0 0 0 / 50%);
+  transition: 0.5s ease-in-out all;
+}
+
+.work-exp-1:hover
+{
+  box-shadow: 0 0 50px 0 rgb(0 0 0 / 50%);
+  transition: 0.5s ease-in-out all;
+}
+
+.blogs
+{
+    padding:  4rem 0;
+}
+
+
+.blogs-center2
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    width:var(--fluid-width);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.blog
+{
+    background-color: whitesmoke;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0.5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out all;/*移出移入效果平滑度*/
+   /* align-items: center;
+    height: 30rem;
+    width: 20rem;*/
+}
+
+.section-title
+{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: 2rem;
+}
+
+.blog:hover/*移出移入效果*/
+{
+    box-shadow: 0.5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.blog-img
+{
+    width: 100%;
+    display: block;
+    height:  15rem;
+    object-fit: cover;
+    border-radius: 1%;
+}
+
+.blog-content
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 1rem;
+
+}
+
+.blog-content span
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary);    
+}
+
+.blog-content h3
+{
+    text-transform:capitalize;
+    color: var(--primary-dark);
+    margin: 0.5rem 0;
+    font-size: 22px;
+}
+
+.blog-content p
+{
+    color:var(--grey-dark);
+    margin-bottom: 0.2rem;
+}
+
+.blog-content a
+{
+    text-transform: capitalize;
+    color: var(--primary-dark);
+    letter-spacing:  1px;
+}
+
+.workshop-header
+{
+  padding-top: 15rem;
+  text-align: center;
+  padding-bottom: 8rem;
 }

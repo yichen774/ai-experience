@@ -16,6 +16,7 @@ window.addEventListener('scroll', function ()
  navbar.classList.remove('navbar-fixed');
  }
 });
+
 showpage(0);
 function showpage(index)
 {

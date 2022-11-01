@@ -17,39 +17,192 @@
             </div>
             <!--nav links -->
             <ul class="nav-links">
-                <li onclick="showpage(0)" class="active" id="nav-links-1">
+                <li class="active" id="nav-links-1">
                     <a href="#">Home</a>
                 </li>
-                <li onclick="showpage(1)" id="nav-links-1">
-                    <a href="#">About me</a>
+                <li id="nav-links-1">
+                    <a href="#section-resume-about">About me</a>
                 </li>
-                <li onclick="showpage(2)" id="nav-links-2">
-                    <a href="#">Work Experinence</a>
-                </li>
-
-                <li onclick="showpage(3)" id="nav-links-3">
-                    <a href="#">Workshop</a>
-
+                <li id="nav-links-2">
+                    <a href="#section-resume-work-experience">Work Experience</a>
                 </li>
 
-                <li onclick="showpage(4)" id="nav-links-4">
-                    <a href="#">others</a>
+                <li  id="nav-links-3">
+                    <a href="#section-resume-workshop">Workshop</a>
+
+                </li>
+
+                <li  id="nav-links-4">
+                    <a href="#showpage">Display</a>
                 </li>
             </ul>
         </div> 
     </nav>
     </section>
-    <section class="resume">
+    <section class="resume" id="section-resume-profile">
         <div class="resume-profile">
-            <div>
+
+            <div class = "container">
                 <div class="resume-me">
-                    <img src="/images/YPs1U7j.png" alt="me" id="resume-img">
+                    <a></a>
+                    <img src="/images/sad dog.jpg" alt="me" id="resume-img">
                 </div>
-                <p id="resume-name">
+                <span id="resume-name">
                     Wilson Chen
-                </p>
+                </span>
+                <span id = "resume-contain">Web Developer ,Python Developer ,C Developer</span>
+                
+            </div>
+            <div class="btn-container">
+                <button class="resume-btn" id="btn-github">
+                    <a href="https://github.com/yichen774"><img src="/images/github-logo.jpg" alt="Github" id="github-logo-img"></a>
+                </button>
+                <button class="resume-btn" id="btn-ig">
+                    <a href="https://www.instagram.com/_811032_c.w/"><img src="/images/ig-logo.png" alt="ig-logo" id="ig-logo-img"></a>
+                </button>
+                <button class="resume-btn" id="btn-fb">
+                    <a href="https://www.facebook.com/wilson.chen.39904/"><img src="/images/fb-logo.png" alt="fb-logo" id="fb-logo-img"></a>
+                </button>
             </div>
         </div>
+    </section>
+    <section id="section-resume-about">
+        <div class="about">
+            <article class="about-blog">
+                <div class="about-content">
+                    <h3 class="about-header">
+                       About
+                    </h3>
+                    <p id="about-intro">
+                        Hello! My name is Wilson Chen. I am a web Developer,Python Developer,C Developer.
+                        <br>I graduated with a bachelor degree in artificial intelligence from TKU.I have a friend, her name is peggy.<br>
+                        I good at fix bugs and working co-develop.
+                    </p>
+                    <a href="https://www.w3schools.com/html/default.asp">Read more</a>
+                </div>
+                <div class="about-content" id="basic-info">
+                    <h3 class="about-header">Basic Information</h3>
+                    <div class="blog-content" id="bs-info">
+                        <div class="row-1">
+                            <p>Age:</p>
+                            <p>University:</p>
+                            <p>Phone Number:</p>
+                            <p>Address:</p>
+                        </div>
+                        <div class="line-info">
+                            <p>18</p>
+                            <p><a href="https://www.tku.edu.tw/">Tamkung University</a></p>
+                            <p>0226215656</p>
+                            <p>New Taipei City ..</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    </section>
+    <section id="section-resume-work-experience">
+        <div class="work-blog">
+            <h3 class="ex-header">Work Experience</h3>
+            <div class="work-exp-1">
+                <div class="ex-blog-right" id="ex-blog-right-1">
+                    <h4>July 2022- April 2022</h4>
+                    <h3>McDonald</h3>
+                </div>
+                <div class="ex-blog-left">
+                    <h3>Part-time job</h3>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui. </p>
+                </div>
+            </div>
+            <div class="work-exp-2">
+                <div class="ex-blog-right">
+                    <h4>July 2023- April 2023</h4>
+                    <h3>Bord technology</h3>
+                </div>
+                <div class="ex-blog-left">
+                    <h3>Intern</h3>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui. </p>
+                </div>
+            </div>
+        </div>
+        <div class="work-blog"></div>
+        <div></div>
+    </section>
+    <section id="section-resume-workshop">
+        <div class="workshop-header">
+            <h3>Workshop</h3>
+        </div> 
+        <div class="blogs-center2">
+            <article class="blog">
+                <img src="/images/calculator-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>AI-實驗</span>
+                    <h3>
+                        Calculator
+                    </h3>
+                    <p><br>The simple calculator</p>
+                    <li onclick="showpage(1)">
+                    <a href="#">Read more</a>
+                    </li>
+
+                </div>
+            </article>
+            <article class="blog">
+                <img src="/images/Countdown-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>AI-實驗</span>
+                    <h3>New Year Countdown</h3>
+                    <p>Countdown for New Year</p>
+                    <li onclick="showpage(2)">
+                    <a href="#">Read more</a>
+                    </li> 
+                </div>
+            </article>
+            <article class="blog">
+                <img src="/images/blogs-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>網頁設計</span>
+                    <h3>Blogs</h3>
+                    <p><br>Travel blogs</p>
+                    <li onclick="showpage(3)">
+                    <a href="#">Read more</a>
+                    </li> 
+                </div>
+            </article>
+            <article class="blog">
+                <img src="/images/table-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>網頁設計</span>
+                    <h3>School timetable</h3>
+                    <p>The simple timetable for TKU AI-B</p>
+                    <li onclick="showpage(4)">
+                    <a href="#">Read more</a>
+                    </li>
+                </div>
+            </article>
+            <article class="blog">
+                <img src="/images/Clickfortime-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>AI-實驗</span>
+                    <h3>Click it for time!</h3>
+                    <p>Using javascript to print the time</p>
+                    <li onclick="showppage(5)">
+                    <a href="#">Read more</a>
+                    </li>
+                </div>
+            </article>
+            <article class="blog">
+                <img src="/images/loogin-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>AI-實驗</span>
+                    <h3>Login</h3>
+                    <p><br>Login and confirm the correction of password .<br>peggy work doesn't work</p>
+                    <li onclick="showpage(6)">
+                        <a href="#">Read more</a>
+                    </li>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="show-classdemo" id="showpage">
 
     </section>
    
